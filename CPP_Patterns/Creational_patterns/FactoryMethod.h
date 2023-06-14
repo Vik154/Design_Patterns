@@ -1,4 +1,7 @@
-﻿#pragma once
+﻿/// <summary> Фабричный метод (Factory Method) </summary> ///
+/* Источник - как обычно, сломай глаз, придумай сам */
+
+#pragma once
 #include <iostream>
 #include <string>
 #include <memory>
