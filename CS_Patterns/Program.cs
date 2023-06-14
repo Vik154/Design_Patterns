@@ -2,8 +2,12 @@
 using Patterns.Creational;
 
 
+using System.Text;
+
 namespace Patterns {
+
     internal class Program {
+
         static void Main(string[] args) {
             ShowResult show = new ShowResult();
             show.Run();
@@ -61,4 +65,5 @@ namespace Patterns {
             } while (result != ConsoleKey.Q);
         }
     }
+    
 }
