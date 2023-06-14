@@ -1,61 +1,61 @@
-#include "FactoryMethod.h"
+п»ї#include "FactoryMethod.h"
 
 namespace Creational {
 
-	// Конструктор абстрактного класса "Продукт"
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р°Р±СЃС‚СЂР°РєС‚РЅРѕРіРѕ РєР»Р°СЃСЃР° "РџСЂРѕРґСѓРєС‚"
 	ShapeProduct::ShapeProduct(const string& name) : figure_name(name) {}
 
-	// Конструктор производного класса от ShapeProduct
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїСЂРѕРёР·РІРѕРґРЅРѕРіРѕ РєР»Р°СЃСЃР° РѕС‚ ShapeProduct
 	Circle::Circle(const string& name) : ShapeProduct(name) { 
-		cout << "Рисует круг\n"; 
+		cout << "Р РёСЃСѓРµС‚ РєСЂСѓРі\n"; 
 	}
-	// Конструктор производного класса от ShapeProduct
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїСЂРѕРёР·РІРѕРґРЅРѕРіРѕ РєР»Р°СЃСЃР° РѕС‚ ShapeProduct
 	Rectangle::Rectangle(const string& name) : ShapeProduct(name) { 
-		cout << "Рисует прямоугольник\n";
+		cout << "Р РёСЃСѓРµС‚ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє\n";
 	}
-	// Конструктор производного класса от ShapeProduct
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїСЂРѕРёР·РІРѕРґРЅРѕРіРѕ РєР»Р°СЃСЃР° РѕС‚ ShapeProduct
 	Ellipse::Ellipse(const string& name) : ShapeProduct(name) {
-		cout << "Рисует эллипс\n";
+		cout << "Р РёСЃСѓРµС‚ СЌР»Р»РёРїСЃ\n";
 	}
 	
-	// Абстрактный класс "Создатель"
+	// РђР±СЃС‚СЂР°РєС‚РЅС‹Р№ РєР»Р°СЃСЃ "РЎРѕР·РґР°С‚РµР»СЊ"
 	ShapeCreator::ShapeCreator(const string& name) : creator_name(name) {}
 
-	// Конструктор производного класса
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїСЂРѕРёР·РІРѕРґРЅРѕРіРѕ РєР»Р°СЃСЃР°
 	CircleCreator::CircleCreator(const string& name) : ShapeCreator(name) {}
 
-	// Логика указателя на базовый класс
+	// Р›РѕРіРёРєР° СѓРєР°Р·Р°С‚РµР»СЏ РЅР° Р±Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ
 	unique_ptr<ShapeProduct> CircleCreator::create_product() {
-		cout << "Рисую круг\n";
+		cout << "Р РёСЃСѓСЋ РєСЂСѓРі\n";
 		return unique_ptr<ShapeProduct>();
 	}
-	// Конструктор производного класса RectangleCreator
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїСЂРѕРёР·РІРѕРґРЅРѕРіРѕ РєР»Р°СЃСЃР°
 	RectangleCreator::RectangleCreator(const string& name) : ShapeCreator(name) {}
 
 	unique_ptr<ShapeProduct> RectangleCreator::create_product() {
-		cout << "Рисую прямоугольник\n";
+		cout << "Р РёСЃСѓСЋ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє\n";
 		return unique_ptr<ShapeProduct>();
 	}
 
-	// Конструктор производного класса
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїСЂРѕРёР·РІРѕРґРЅРѕРіРѕ РєР»Р°СЃСЃР°
 	EllipseCreator::EllipseCreator(const string& name) : ShapeCreator(name) {}
 
 	unique_ptr<ShapeProduct> EllipseCreator::create_product() {
-		cout << "Рисую эллипс\n";
+		cout << "Р РёСЃСѓСЋ СЌР»Р»РёРїСЃ\n";
 		return unique_ptr<ShapeProduct>();
 	}
 
-	// Конструктор обслуживающего класса
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РѕР±СЃР»СѓР¶РёРІР°СЋС‰РµРіРѕ РєР»Р°СЃСЃР°
 	FactoryMethod::FactoryMethod() {
 		_shape_creator.reserve(3);
-		_shape_creator.push_back(make_unique<EllipseCreator>("Рисователь эллипсов"));
-		_shape_creator.push_back(make_unique<RectangleCreator>("Рисователь прямоугольников"));
-		_shape_creator.push_back(make_unique<CircleCreator>("Рисователь кругов"));
+		_shape_creator.push_back(make_unique<EllipseCreator>("Р РёСЃРѕРІР°С‚РµР»СЊ СЌР»Р»РёРїСЃРѕРІ"));
+		_shape_creator.push_back(make_unique<RectangleCreator>("Р РёСЃРѕРІР°С‚РµР»СЊ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєРѕРІ"));
+		_shape_creator.push_back(make_unique<CircleCreator>("Р РёСЃРѕРІР°С‚РµР»СЊ РєСЂСѓРіРѕРІ"));
 	}
 
 	void FactoryMethod::show_name_creator() {
 		for (int i = 0; i < 3; ++i) {
-			cout << _shape_creator[i]->get_name() << " говорит: ";
+			cout << _shape_creator[i]->get_name() << " РіРѕРІРѕСЂРёС‚: ";
 			_shape_creator[i]->create_product();
 		}
 	}
