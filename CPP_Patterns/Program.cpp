@@ -25,7 +25,7 @@ namespace Pattern {
 				cin >> result;
 				switch (result) {
 				case 49: _factory_method->show_name_creator(); break;
-				case 50: cout << "CHAAAAAR";
+				case 50: cout << "CHAAAR";
 					break;
 				default:
 					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";

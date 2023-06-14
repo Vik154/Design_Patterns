@@ -29,7 +29,7 @@ namespace Creational {
 		cout << "Рисую круг\n";
 		return unique_ptr<ShapeProduct>();
 	}
-	// Конструктор производного класса
+	// Конструктор производного класса RectangleCreator
 	RectangleCreator::RectangleCreator(const string& name) : ShapeCreator(name) {}
 
 	unique_ptr<ShapeProduct> RectangleCreator::create_product() {
