@@ -20,12 +20,12 @@ namespace Pattern {
 			_factory_method(make_unique<Creational::FactoryMethod>()),
 			_abstract_factory(make_unique<Creational::AbstractFactoryTest>())
 		{}
-		
+
 		void run() {
 			char result;
-			string info = "\nВыберите команду:"
-				"\nq - Выход"
-				"\n1 - Паттерн \"Фабричный метод\""
+			string info = "\n�������� �������:"
+				"\nq - �����"
+				"\n1 - ������� \"��������� �����\""
 				"\n2 - Паттерн \"Абстракная фабрика\""
 				"\n3 - Паттерн \"Одиночка\""
 				"\n4 - Паттерн \"Прототип\""
@@ -48,15 +48,15 @@ namespace Pattern {
 				case 55: Behavioral::test_observer();          break;
 				case 56: Behavioral::test_command();           break;
 				default:
-					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
+					cout << "׸ �� ������� ��-������. ����� ������� ���, �� �����!";
 					break;
 				}
 			} while (result != 'q');
 		}
 	private:
-		// Пример паттерна "Фабричный метод"
+		// ������ �������� "��������� �����"
 		unique_ptr<Creational::FactoryMethod> _factory_method;
-		// Пример паттерна "Абстракная фабрика"
+		// ������ �������� "���������� �������"
 		unique_ptr<Creational::AbstractFactoryTest> _abstract_factory;
 	};
 }
