@@ -1,4 +1,4 @@
-#include "Creational_patterns/FactoryMethod.h"
+п»ї#include "Creational_patterns/FactoryMethod.h"
 
 namespace Pattern {
 	using std::unique_ptr;
@@ -12,13 +12,14 @@ namespace Pattern {
 		Handler() :
 			_factory_method(make_unique<Creational::FactoryMethod>()) 
 		{}
-
+		
 		void run() {
 			char result;
-			string info = "\nВыберите команду:"
-				"\nq - Выход"
-				"\n1 - Паттерн \"Фабричный метод\""
-				"\n2 - Паттерн \"\" \n";
+			string info = "\nР’С‹Р±РµСЂРёС‚Рµ РєРѕРјР°РЅРґСѓ:"
+				"\nq - Р’С‹С…РѕРґ"
+				"\n1 - РџР°С‚С‚РµСЂРЅ \"Р¤Р°Р±СЂРёС‡РЅС‹Р№ РјРµС‚РѕРґ\""
+				"\n2 - РџР°С‚С‚РµСЂРЅ \"\" \n"
+				"";
 			do {
 				cout << info;
 				cin >> result;
@@ -27,13 +28,13 @@ namespace Pattern {
 				case 50: cout << "CHAAAAAR";
 					break;
 				default:
-					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
+					cout << "Р§С‘ С‚С‹ С‚С‹РєР°РµС€СЊ С‡С‘-РїРѕРїР°Р»Рѕ. РўР°РєРѕР№ РєРѕРјР°РЅРґС‹ РЅРµС‚, РЅРµ С‚С‹РєР°Р№!";
 					break;
 				}
 			} while (result != 'q');
 		}
 	private:
-		// Пример паттерна "Фабричный метод"
+		// РџСЂРёРјРµСЂ РїР°С‚С‚РµСЂРЅР° "Р¤Р°Р±СЂРёС‡РЅС‹Р№ РјРµС‚РѕРґ"
 		unique_ptr<Creational::FactoryMethod> _factory_method;
 	};
 }
