@@ -5,7 +5,6 @@ using Patterns.Creational;
 using System.Text;
 
 namespace Patterns {
-
     internal class Program {
 
         static void Main(string[] args) {
@@ -65,5 +64,4 @@ namespace Patterns {
             } while (result != ConsoleKey.Q);
         }
     }
-    
 }
