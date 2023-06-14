@@ -1,13 +1,9 @@
-﻿
-
-using System.Text;
+﻿using System.Text;
 
 namespace Patterns {
-
     internal class Program {
 
         static void Main(string[] args) {
-
             ShowResult show = new ShowResult();
             show.Run();
         }
@@ -19,17 +15,15 @@ namespace Patterns {
         public ShowResult() { 
             Factory = new Patterns.Creational.FactoryMethod(); }
 
-
         /// <summary> Паттерн - "Фабричный метод" </summary>
         private readonly Patterns.Creational.FactoryMethod? Factory;
-
 
         public void Run() {
             ConsoleKey result;
             string info = "\nВыберите команду:" +
-                "\nq - выход" +
+                "\nq - Выход" +
                 "\n1 - Паттерн \"Фабричный метод\"" +
-                "\n2 - Паттерн \"\"\n";
+                "\n2 - Паттерн \"\" \n";
             do {
                 Console.WriteLine(info);
                 result = Console.ReadKey().Key;
@@ -45,5 +39,4 @@ namespace Patterns {
             } while (result != ConsoleKey.Q);
         }
     }
-    
 }
