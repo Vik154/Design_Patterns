@@ -20,7 +20,7 @@ namespace Pattern {
 			_factory_method(make_unique<Creational::FactoryMethod>()),
 			_abstract_factory(make_unique<Creational::AbstractFactoryTest>())
 		{}
-
+		
 		void run() {
 			char result;
 			string info = "\n�������� �������:"
