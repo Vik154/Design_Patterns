@@ -1,5 +1,5 @@
-/// <summary> Фабричный метод (Factory Method) </summary> ///
-/* Источник - как обычно, сломай глаз, придумай */
+п»ї/// <summary> Р¤Р°Р±СЂРёС‡РЅС‹Р№ РјРµС‚РѕРґ (Factory Method) </summary> ///
+/* РСЃС‚РѕС‡РЅРёРє - РєР°Рє РѕР±С‹С‡РЅРѕ, СЃР»РѕРјР°Р№ РіР»Р°Р·, РїСЂРёРґСѓРјР°Р№ СЃР°Рј*/
 
 #pragma once
 #include <iostream>
@@ -16,7 +16,7 @@ namespace Creational {
 	using std::cout;
 	using std::cin;
 
-	// Абстрактный класс "Продукт"
+	// РђР±СЃС‚СЂР°РєС‚РЅС‹Р№ РєР»Р°СЃСЃ "РџСЂРѕРґСѓРєС‚"
 	class ShapeProduct abstract {
 	public:
 		ShapeProduct(const string& name);
@@ -40,7 +40,7 @@ namespace Creational {
 		Ellipse(const string& name);
 	};
 
-	// Абстрактный класс "Создатель"
+	// РђР±СЃС‚СЂР°РєС‚РЅС‹Р№ РєР»Р°СЃСЃ "РЎРѕР·РґР°С‚РµР»СЊ"
 	class ShapeCreator {
 	public:
 		ShapeCreator(const string& name);
@@ -69,7 +69,7 @@ namespace Creational {
 		unique_ptr<ShapeProduct> create_product() override;
 	};
 
-	// Просто обслуживающий класс для main
+	// РџСЂРѕСЃС‚Рѕ РѕР±СЃР»СѓР¶РёРІР°СЋС‰РёР№ РєР»Р°СЃСЃ РґР»СЏ main
 	class FactoryMethod final {
 	public:
 		FactoryMethod();
