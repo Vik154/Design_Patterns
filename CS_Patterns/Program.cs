@@ -1,6 +1,10 @@
 ﻿using Patterns.Creational;
 
 // Тест слияния изменения веток
+// Чё-то поменял
+class A {
+    A() { Console.WriteLine("::"); }
+}
 
 namespace Patterns {
     internal class Program {
