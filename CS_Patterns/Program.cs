@@ -1,6 +1,6 @@
-﻿
+﻿using Patterns.Creational;
 
-using Patterns.Creational;
+// Тест слияния изменения веток
 
 namespace Patterns {
     internal class Program {
@@ -49,8 +49,4 @@ namespace Patterns {
             } while (result != ConsoleKey.Q);
         }
     }
-}
-
-class AAA {
-    AAA() { Console.WriteLine("::"); }
 }
