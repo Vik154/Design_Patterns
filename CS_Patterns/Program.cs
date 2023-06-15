@@ -50,3 +50,7 @@ namespace Patterns {
         }
     }
 }
+
+class AAA {
+    AAA() { Console.WriteLine("::"); }
+}
