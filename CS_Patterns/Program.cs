@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿
+
+using Patterns.Creational;
 
 namespace Patterns {
     internal class Program {
@@ -13,25 +15,33 @@ namespace Patterns {
     internal class ShowResult {
 
         public ShowResult() { 
-            Factory = new Patterns.Creational.FactoryMethod(); }
+            // ---- Фабричный метод ---------
+            Factory = new Patterns.Creational.FactoryMethod();
+            // ---- Абстракная фабрика ------
+            RedFactory = new RedFactory();
+            AbstractFactory = new Patterns.Creational.Clients(RedFactory);
+        }
 
         /// <summary> Паттерн - "Фабричный метод" </summary>
         private readonly Patterns.Creational.FactoryMethod? Factory;
+        
+        /// <summary> Паттерн - "Абстрактная фаюрика" </summary>
+        private readonly Patterns.Creational.Clients? AbstractFactory;
+        private RedFactory RedFactory;
 
         public void Run() {
             ConsoleKey result;
             string info = "\nВыберите команду:" +
                 "\nq - Выход" +
                 "\n1 - Паттерн \"Фабричный метод\"" +
-                "\n2 - Паттерн \"\" \n";
+                "\n2 - Паттерн \"Абстрактная фаюрика\"\n";
             do {
                 Console.WriteLine(info);
                 result = Console.ReadKey().Key;
                 Console.Write('\r');
                 switch (result) {
                     case ConsoleKey.D1: Factory?.ShowName(); break;
-                    case ConsoleKey.D2:
-                        break;
+                    case ConsoleKey.D2: AbstractFactory?.ShowResult(); break;
                     default:
                         Console.WriteLine("Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!");
                         break;
