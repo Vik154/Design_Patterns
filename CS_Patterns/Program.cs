@@ -43,7 +43,7 @@ namespace Patterns {
                     case ConsoleKey.D1: Factory?.ShowName(); break;
                     case ConsoleKey.D2: AbstractFactory?.ShowResult(); break;
                     default:
-                        Console.WriteLine("Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!");
+                        Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
                 }
             } while (result != ConsoleKey.Q);
