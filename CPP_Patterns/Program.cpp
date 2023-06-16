@@ -1,4 +1,5 @@
 ﻿#include "Creational_patterns/FactoryMethod.h"
+#include "Creational_patterns/AbstractFactory.h"
 
 namespace Pattern {
 	using std::unique_ptr;
@@ -10,7 +11,8 @@ namespace Pattern {
 	class Handler final {
 	public:
 		Handler() :
-			_factory_method(make_unique<Creational::FactoryMethod>()) 
+			_factory_method(make_unique<Creational::FactoryMethod>()),
+			_abstract_factory(make_unique<Creational::AbstractFactoryTest>())
 		{}
 		
 		void run() {
@@ -25,8 +27,7 @@ namespace Pattern {
 				cin >> result;
 				switch (result) {
 				case 49: _factory_method->show_name_creator(); break;
-				case 50: cout << "CHAAAR";
-					break;
+				case 50: _abstract_factory->show_result();     break;
 				default:
 					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
 					break;
@@ -36,6 +37,9 @@ namespace Pattern {
 	private:
 		// Пример паттерна "Фабричный метод"
 		unique_ptr<Creational::FactoryMethod> _factory_method;
+		// Пример паттерна "Абстракная фабрика"
+		unique_ptr<Creational::AbstractFactoryTest> _abstract_factory;
+
 	};
 }
 

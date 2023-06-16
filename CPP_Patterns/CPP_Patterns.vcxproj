@@ -135,9 +135,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Creational_patterns\AbstractFactory.h" />
     <ClInclude Include="Creational_patterns\FactoryMethod.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Creational_patterns\AbstractFactory.cpp" />
     <ClCompile Include="Creational_patterns\FactoryMethod.cpp" />
     <ClCompile Include="Program.cpp" />
   </ItemGroup>
