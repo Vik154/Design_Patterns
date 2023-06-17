@@ -44,7 +44,7 @@ namespace Patterns {
                     case ConsoleKey.D1: Factory?.ShowName(); break;
                     case ConsoleKey.D2: AbstractFactory?.ShowResult(); break;
                     case ConsoleKey.D3: TestSingleton.show(); break;
-                    case ConsoleKey.D4: Creational.TestPrototype.show_res(); break;
+                    case ConsoleKey.D4: TestPrototype.show_res(); break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;

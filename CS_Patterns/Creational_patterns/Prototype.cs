@@ -86,6 +86,5 @@ internal static class TestPrototype {
         Console.WriteLine($"Name: {student2.Name}; id: {student2.Id}");
         Console.WriteLine($"Name: {students[2].Name}; id: {students[2].Id}");
     }
-
 }
 //----------------------------------------------------
