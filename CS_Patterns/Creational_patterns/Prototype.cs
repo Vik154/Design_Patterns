@@ -4,10 +4,6 @@
 //  Прототип —​ позволяет создавать новые объекты путем клонирования уже существующих.
 //  По сути данный паттерн предлагает технику клонирования объектов
 
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Runtime.Serialization;
-using System.Reflection.Metadata.Ecma335;
-
 namespace Patterns.Creational;
 
 // Концепция паттерна:
