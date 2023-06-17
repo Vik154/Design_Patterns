@@ -33,12 +33,17 @@ namespace Patterns {
         private readonly Patterns.Creational.Clients? AbstractFactory;
         private RedFactory RedFactory;
 
+        /// <summary> Singleton </summary>
+        
+
         public void Run() {
             ConsoleKey result;
             string info = "\nВыберите команду:" +
                 "\nq - Выход" +
                 "\n1 - Паттерн \"Фабричный метод\"" +
-                "\n2 - Паттерн \"Абстрактная фаюрика\"\n";
+                "\n2 - Паттерн \"Абстрактная фаюрика\"" +
+                "\n3 - Паттерн \"Одиночка\"" +
+                "\n";
             do {
                 Console.WriteLine(info);
                 result = Console.ReadKey().Key;
@@ -46,6 +51,7 @@ namespace Patterns {
                 switch (result) {
                     case ConsoleKey.D1: Factory?.ShowName(); break;
                     case ConsoleKey.D2: AbstractFactory?.ShowResult(); break;
+                    case ConsoleKey.D3: TestSingleton.show(); break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
