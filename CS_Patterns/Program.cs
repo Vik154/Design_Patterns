@@ -34,6 +34,7 @@ namespace Patterns {
                 "\n1 - Паттерн \"Фабричный метод\"" +
                 "\n2 - Паттерн \"Абстрактная фаюрика\"" +
                 "\n3 - Паттерн \"Одиночка\"" +
+                "\n4 - Паттерн \"Прототип\"" +
                 "\n";
             do {
                 Console.WriteLine(info);
@@ -43,6 +44,7 @@ namespace Patterns {
                     case ConsoleKey.D1: Factory?.ShowName(); break;
                     case ConsoleKey.D2: AbstractFactory?.ShowResult(); break;
                     case ConsoleKey.D3: TestSingleton.show(); break;
+                    case ConsoleKey.D4: Creational.TestPrototype.show_res(); break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
