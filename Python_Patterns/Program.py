@@ -1,5 +1,6 @@
 ﻿import FactoryMethod
 from Creational_patterns.AbstractFactory import *
+from Creational_patterns.Singleton import test_singleton
 
 
 class Handler():
@@ -8,10 +9,13 @@ class Handler():
         self._abstract_factory = FactoryTest()
 
     def run(self):
+
         info = "\nВыберите команду: \
         \nq - Выход \
         \n1 - Паттерн \"Фабричный метод\" \
-        \n2 - Паттерн \"\" \n";
+        \n2 - Паттерн \"Абстрактнрая фабрика\" \
+        \n3 - Паттерн \"Singleton\" \
+        \n";
 
         while (True):
             key = input(info)
@@ -20,6 +24,7 @@ class Handler():
                     return
                 case '1': self._factory_method.show(); continue;
                 case '2': self._abstract_factory.show(); continue;
+                case '3': test_singleton(); continue;
                 case _:
                     print("Не тыкай чё-попало")
                 

@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="Creational_patterns\AbstractFactory.py" />
     <Compile Include="Creational_patterns\FactoryMethod.py" />
+    <Compile Include="Creational_patterns\Singleton.py" />
     <Compile Include="Program.py" />
   </ItemGroup>
   <ItemGroup>
