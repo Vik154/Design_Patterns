@@ -1,5 +1,6 @@
 ﻿#include "Creational_patterns/FactoryMethod.h"
 #include "Creational_patterns/AbstractFactory.h"
+#include "Creational_patterns/Singleton.hpp"
 
 namespace Pattern {
 	using std::unique_ptr;
@@ -20,14 +21,16 @@ namespace Pattern {
 			string info = "\nВыберите команду:"
 				"\nq - Выход"
 				"\n1 - Паттерн \"Фабричный метод\""
-				"\n2 - Паттерн \"\" \n"
-				"";
+				"\n2 - Паттерн \"Абстракная фабрика\""
+				"\n3 - Паттерн \"Одиночка\""
+				"\n";
 			do {
 				cout << info;
 				cin >> result;
 				switch (result) {
 				case 49: _factory_method->show_name_creator(); break;
 				case 50: _abstract_factory->show_result();     break;
+				case 51: Creational::test_singleton();         break;
 				default:
 					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
 					break;
