@@ -1,20 +1,13 @@
 ﻿using Patterns.Creational;
 
-// Тест слияния изменения веток
-// Чё-то поменял
-class A {
-    A() { Console.WriteLine("::"); }
-}
 
 namespace Patterns {
     internal class Program {
-
         static void Main(string[] args) {
             ShowResult show = new ShowResult();
             show.Run();
         }
     }
-
     /// <summary> Консольное отображение </summary>
     internal class ShowResult {
 
@@ -32,8 +25,6 @@ namespace Patterns {
         /// <summary> Паттерн - "Абстрактная фаюрика" </summary>
         private readonly Patterns.Creational.Clients? AbstractFactory;
         private RedFactory RedFactory;
-
-        /// <summary> Singleton </summary>
         
 
         public void Run() {
