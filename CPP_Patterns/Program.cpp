@@ -1,6 +1,7 @@
 ﻿#include "Creational_patterns/FactoryMethod.h"
 #include "Creational_patterns/AbstractFactory.h"
 #include "Creational_patterns/Singleton.hpp"
+#include "Creational_patterns/Prototype.hpp"
 
 namespace Pattern {
 	using std::unique_ptr;
@@ -31,6 +32,7 @@ namespace Pattern {
 				case 49: _factory_method->show_name_creator(); break;
 				case 50: _abstract_factory->show_result();     break;
 				case 51: Creational::test_singleton();         break;
+				case 52: Creational::test_prototype(); break;
 				default:
 					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
 					break;

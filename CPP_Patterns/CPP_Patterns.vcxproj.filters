@@ -24,6 +24,9 @@
     <ClInclude Include="Creational_patterns\Singleton.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Creational_patterns\Prototype.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Creational_patterns\FactoryMethod.cpp">
