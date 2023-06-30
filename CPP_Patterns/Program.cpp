@@ -3,6 +3,7 @@
 #include "Creational_patterns/Singleton.hpp"
 #include "Creational_patterns/Prototype.hpp"
 #include "Creational_patterns/Builder.hpp"
+#include "Behavioral_patterns/Strategy.hpp"
 
 namespace Pattern {
 	using std::unique_ptr;
@@ -27,6 +28,7 @@ namespace Pattern {
 				"\n3 - Паттерн \"Одиночка\""
 				"\n4 - Паттерн \"Прототип\""
 				"\n5 - Паттерн \"Строитель\""
+				"\n6 - Паттерн \"Стратегия\""
 				"\n";
 			do {
 				cout << info;
@@ -37,7 +39,7 @@ namespace Pattern {
 				case 51: Creational::test_singleton();         break;
 				case 52: Creational::test_prototype();         break;
 				case 53: Creational::test_builder();           break;
-				case 54: std::cout << "CASE 6"; break;
+				case 54: Behavioral::test_strategey();         break;
 				default:
 					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
 					break;
