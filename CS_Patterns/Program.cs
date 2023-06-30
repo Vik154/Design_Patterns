@@ -1,8 +1,5 @@
 ﻿using Patterns.Creational;
 
-
-using Patterns.Creational;
-
 namespace Patterns {
     internal class Program {
 
