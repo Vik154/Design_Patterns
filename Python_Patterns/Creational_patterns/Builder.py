@@ -19,7 +19,6 @@ class Builder(ABC):
     @abstractmethod
     def produce_part_c(self) -> None: pass
 
-
 # Классы конкретных строителей предоставляют конкретные реализации шагов построения продукта
 class ConcreteBuilder1(Builder):
     def __init__(self) -> None:
