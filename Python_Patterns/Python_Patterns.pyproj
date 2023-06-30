@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Behavioral_patterns\Strategy.py" />
     <Compile Include="Creational_patterns\AbstractFactory.py" />
     <Compile Include="Creational_patterns\Builder.py" />
     <Compile Include="Creational_patterns\FactoryMethod.py" />

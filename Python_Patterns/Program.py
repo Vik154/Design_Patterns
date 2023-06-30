@@ -3,6 +3,7 @@ import FactoryMethod
 from Creational_patterns.AbstractFactory import *
 from Creational_patterns.Singleton import test_singleton
 from Creational_patterns.Builder import test_builder
+from Behavioral_patterns.Strategy import test_strategy
 
 
 class Handler():
@@ -19,6 +20,7 @@ class Handler():
         \n3 - Паттерн \"Singleton\" \
         \n4 - Паттерн \"Прототип\" \
         \n5 - Паттерн \"Строитель\" \
+        \n6 - Паттерн \"Стратегия\" \
         \n";
 
         while (True):
@@ -31,6 +33,7 @@ class Handler():
                 case '3': test_singleton();              continue;
                 case '4': test_prototype();              continue;
                 case '5': test_builder();                continue;
+                case '6': test_strategy(); continue;
                 case _:
                     print("Не тыкай чё-попало")
                 
