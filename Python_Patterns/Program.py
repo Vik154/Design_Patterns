@@ -2,6 +2,7 @@
 import FactoryMethod
 from Creational_patterns.AbstractFactory import *
 from Creational_patterns.Singleton import test_singleton
+from Creational_patterns.Builder import test_builder
 
 
 class Handler():
@@ -17,6 +18,7 @@ class Handler():
         \n2 - Паттерн \"Абстрактнрая фабрика\" \
         \n3 - Паттерн \"Singleton\" \
         \n4 - Паттерн \"Прототип\" \
+        \n5 - Паттерн \"Строитель\" \
         \n";
 
         while (True):
@@ -24,10 +26,11 @@ class Handler():
             match key:
                 case 'q': return;
                 case 'й': return;
-                case '1': self._factory_method.show(); continue;
+                case '1': self._factory_method.show();   continue;
                 case '2': self._abstract_factory.show(); continue;
-                case '3': test_singleton(); continue;
-                case '4': test_prototype(); continue;
+                case '3': test_singleton();              continue;
+                case '4': test_prototype();              continue;
+                case '5': test_builder();                continue;
                 case _:
                     print("Не тыкай чё-попало")
                 
