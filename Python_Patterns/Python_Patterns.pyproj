@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Creational_patterns\" />
+    <Folder Include="Behavioral_patterns\" />
+    <Folder Include="Structural_patterns\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
