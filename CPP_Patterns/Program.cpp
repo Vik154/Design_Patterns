@@ -37,6 +37,7 @@ namespace Pattern {
 				case 51: Creational::test_singleton();         break;
 				case 52: Creational::test_prototype();         break;
 				case 53: Creational::test_builder();           break;
+				case 54: std::cout << "CASE 6"; break;
 				default:
 					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
 					break;
