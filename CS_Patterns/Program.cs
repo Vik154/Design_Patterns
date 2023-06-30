@@ -1,4 +1,5 @@
-﻿
+﻿using Patterns.Creational;
+
 
 using Patterns.Creational;
 
@@ -10,7 +11,6 @@ namespace Patterns {
             show.Run();
         }
     }
-
     /// <summary> Консольное отображение </summary>
     internal class ShowResult {
 
@@ -28,13 +28,19 @@ namespace Patterns {
         /// <summary> Паттерн - "Абстрактная фаюрика" </summary>
         private readonly Patterns.Creational.Clients? AbstractFactory;
         private RedFactory RedFactory;
+        
 
         public void Run() {
             ConsoleKey result;
             string info = "\nВыберите команду:" +
                 "\nq - Выход" +
                 "\n1 - Паттерн \"Фабричный метод\"" +
-                "\n2 - Паттерн \"Абстрактная фаюрика\"\n";
+                "\n2 - Паттерн \"Абстрактная фаюрика\"" +
+                "\n3 - Паттерн \"Одиночка\"" +
+                "\n4 - Паттерн \"Прототип\"" +
+                "\n5 - Паттерн \"Строитель\"" +
+                "\n6 - Паттерн \"Прототип\"" +
+                "\n";
             do {
                 Console.WriteLine(info);
                 result = Console.ReadKey().Key;
@@ -42,6 +48,10 @@ namespace Patterns {
                 switch (result) {
                     case ConsoleKey.D1: Factory?.ShowName(); break;
                     case ConsoleKey.D2: AbstractFactory?.ShowResult(); break;
+                    case ConsoleKey.D3: TestSingleton.show(); break;
+                    case ConsoleKey.D4: TestPrototype.show_res(); break;
+                    case ConsoleKey.D5: TestBuilder.ShowResult(); break;
+                    case ConsoleKey.D6: break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
