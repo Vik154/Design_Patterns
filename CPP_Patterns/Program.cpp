@@ -2,6 +2,7 @@
 #include "Creational_patterns/AbstractFactory.h"
 #include "Creational_patterns/Singleton.hpp"
 #include "Creational_patterns/Prototype.hpp"
+#include "Creational_patterns/Builder.hpp"
 
 namespace Pattern {
 	using std::unique_ptr;
@@ -25,6 +26,7 @@ namespace Pattern {
 				"\n2 - Паттерн \"Абстракная фабрика\""
 				"\n3 - Паттерн \"Одиночка\""
 				"\n4 - Паттерн \"Прототип\""
+				"\n5 - Паттерн \"Строитель\""
 				"\n";
 			do {
 				cout << info;
@@ -33,7 +35,8 @@ namespace Pattern {
 				case 49: _factory_method->show_name_creator(); break;
 				case 50: _abstract_factory->show_result();     break;
 				case 51: Creational::test_singleton();         break;
-				case 52: Creational::test_prototype(); break;
+				case 52: Creational::test_prototype();         break;
+				case 53: Creational::test_builder();           break;
 				default:
 					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
 					break;

@@ -136,6 +136,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Creational_patterns\AbstractFactory.h" />
+    <ClInclude Include="Creational_patterns\Builder.hpp" />
     <ClInclude Include="Creational_patterns\FactoryMethod.h" />
     <ClInclude Include="Creational_patterns\Prototype.hpp" />
     <ClInclude Include="Creational_patterns\Singleton.hpp" />
