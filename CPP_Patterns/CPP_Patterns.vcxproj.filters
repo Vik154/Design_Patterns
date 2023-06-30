@@ -30,6 +30,9 @@
     <ClInclude Include="Creational_patterns\Builder.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Behavioral_patterns\Strategy.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Creational_patterns\FactoryMethod.cpp">
