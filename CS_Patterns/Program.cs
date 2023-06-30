@@ -4,9 +4,6 @@ using Patterns.Creational;
 
 using System.Text;
 
-
-using Patterns.Creational;
-
 namespace Patterns {
     internal class Program {
 
