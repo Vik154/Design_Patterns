@@ -1,4 +1,5 @@
-﻿using Patterns.Creational;
+﻿using Patterns.Behavioral;
+using Patterns.Creational;
 
 
 namespace Patterns {
@@ -36,7 +37,8 @@ namespace Patterns {
                 "\n3 - Паттерн \"Одиночка\"" +
                 "\n4 - Паттерн \"Прототип\"" +
                 "\n5 - Паттерн \"Строитель\"" +
-                "\n6 - Паттерн \"Прототип\"" +
+                "\n6 - Паттерн \"Стратегия\"" +
+                "\n7 - Паттерн \"Стратегия\"" +
                 "\n";
             do {
                 Console.WriteLine(info);
@@ -48,7 +50,7 @@ namespace Patterns {
                     case ConsoleKey.D3: TestSingleton.show(); break;
                     case ConsoleKey.D4: TestPrototype.show_res(); break;
                     case ConsoleKey.D5: TestBuilder.ShowResult(); break;
-                    case ConsoleKey.D6: break;
+                    case ConsoleKey.D6: TestStrategy.Test_Strategy(); break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
