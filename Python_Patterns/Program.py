@@ -7,7 +7,7 @@ from Behavioral_patterns.Strategy import test_strategy
 
 
 class Handler():
-    def __init__(self) -> object:
+    def __init__(self):
         self._factory_method = FactoryMethod.ReleaseFactoryMethod()
         self._abstract_factory = FactoryTest()
 
