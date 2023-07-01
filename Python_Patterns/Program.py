@@ -4,6 +4,7 @@ from Creational_patterns.AbstractFactory import *
 from Creational_patterns.Singleton import test_singleton
 from Creational_patterns.Builder import test_builder
 from Behavioral_patterns.Strategy import test_strategy
+from Behavioral_patterns.Observer import test_observer
 
 
 class Handler():
@@ -33,7 +34,8 @@ class Handler():
                 case '3': test_singleton();              continue;
                 case '4': test_prototype();              continue;
                 case '5': test_builder();                continue;
-                case '6': test_strategy(); continue;
+                case '6': test_strategy();               continue;
+                case '7': test_observer();               continue;
                 case _:
                     print("Не тыкай чё-попало")
                 
