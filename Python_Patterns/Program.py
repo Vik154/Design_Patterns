@@ -6,6 +6,7 @@ from Creational_patterns.Singleton import test_singleton
 from Creational_patterns.Builder import test_builder
 from Behavioral_patterns.Strategy import test_strategy
 from Behavioral_patterns.Observer import test_observer
+from Behavioral_patterns.TemplateMethod import test_template
 
 
 class Handler():
@@ -41,6 +42,7 @@ class Handler():
                 case '6': test_strategy();               continue;
                 case '7': test_observer();               continue;
                 case '8': test_command();                continue;
+                case '9': test_template();               continue;
                 case _:
                     print("Не тыкай чё-попало")
                 
