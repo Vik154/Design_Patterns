@@ -1,4 +1,5 @@
-﻿from Creational_patterns.Prototype import test_prototype
+﻿from Behavioral_patterns.Command import test_command
+from Creational_patterns.Prototype import test_prototype
 import FactoryMethod
 from Creational_patterns.AbstractFactory import *
 from Creational_patterns.Singleton import test_singleton
@@ -22,7 +23,9 @@ class Handler():
         \n4 - Паттерн \"Прототип\" \
         \n5 - Паттерн \"Строитель\" \
         \n6 - Паттерн \"Стратегия\" \
-        \n6 - Паттерн \"Наблюдатель\" \
+        \n7 - Паттерн \"Наблюдатель\" \
+        \n8 - Паттерн \"Команда\" \
+        \n9 - Паттерн \"Наблюдатель\" \
         \n";
 
         while (True):
@@ -37,6 +40,7 @@ class Handler():
                 case '5': test_builder();                continue;
                 case '6': test_strategy();               continue;
                 case '7': test_observer();               continue;
+                case '8': test_command();                continue;
                 case _:
                     print("Не тыкай чё-попало")
                 
