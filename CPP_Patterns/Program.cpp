@@ -6,6 +6,8 @@
 #include "Behavioral_patterns/Strategy.hpp"
 #include "Behavioral_patterns/Observer.hpp"
 #include "Behavioral_patterns/Command.hpp"
+#include "Behavioral_patterns/TemplateMethod.hpp"
+
 
 namespace Pattern {
 	using std::unique_ptr;
@@ -47,6 +49,7 @@ namespace Pattern {
 				case 54: Behavioral::test_strategey();         break;
 				case 55: Behavioral::test_observer();          break;
 				case 56: Behavioral::test_command();           break;
+				case 57: Behavioral::test_template();          break;
 				default:
 					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
 					break;
