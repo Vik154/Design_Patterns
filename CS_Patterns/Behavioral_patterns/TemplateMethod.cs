@@ -91,10 +91,9 @@ namespace Patterns.Behavioral {
             HouseTemplate houseTemplate = new ConcreteHouse();
             houseTemplate.BuildHouse();
             Console.WriteLine();
-            Console.WriteLine("Строим деревянный дом\n");
+            Console.WriteLine("Строим деревянный дом");
             houseTemplate = new WoodenHouse();
             houseTemplate.BuildHouse();
         } 
     }
-
 }
