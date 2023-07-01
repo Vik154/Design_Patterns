@@ -46,13 +46,14 @@ namespace Patterns {
                 result = Console.ReadKey().Key;
                 Console.Write('\r');
                 switch (result) {
-                    case ConsoleKey.D1: Factory?.ShowName(); break;
-                    case ConsoleKey.D2: AbstractFactory?.ShowResult(); break;
-                    case ConsoleKey.D3: TestSingleton.show(); break;
-                    case ConsoleKey.D4: TestPrototype.show_res(); break;
-                    case ConsoleKey.D5: TestBuilder.ShowResult(); break;
-                    case ConsoleKey.D6: TestStrategy.Test_Strategy(); break;
-                    case ConsoleKey.D7: TestObserver.ShowResult(); break;
+                    case ConsoleKey.D1: Factory?.ShowName();            break;
+                    case ConsoleKey.D2: AbstractFactory?.ShowResult();  break;
+                    case ConsoleKey.D3: TestSingleton.show();           break;
+                    case ConsoleKey.D4: TestPrototype.show_res();       break;
+                    case ConsoleKey.D5: TestBuilder.ShowResult();       break;
+                    case ConsoleKey.D6: TestStrategy.Test_Strategy();   break;
+                    case ConsoleKey.D7: TestObserver.ShowResult();      break;
+                    case ConsoleKey.D8: TestCommand.ShowResult();       break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
