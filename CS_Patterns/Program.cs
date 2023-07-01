@@ -28,7 +28,7 @@ namespace Patterns {
         private RedFactory RedFactory;
 
         public void Run() {
-            ConsoleKey result;
+            string? result;
             string info = "\nВыберите команду:" +
                 "\nq - Выход" +
                 "\n1 - Паттерн \"Фабричный метод\"" +
@@ -40,26 +40,29 @@ namespace Patterns {
                 "\n7 - Паттерн \"Наблюдатель\"" +
                 "\n8 - Паттерн \"Команда\"" +
                 "\n9 - Паттерн \"Шаблонный метод\"" +
+                "\n10 - Паттерн \"Итератор\"" +
                 "\n";
-            do {
+            while (true) {
                 Console.WriteLine(info);
-                result = Console.ReadKey().Key;
+                result = Console.ReadLine();
                 Console.Write('\r');
                 switch (result) {
-                    case ConsoleKey.D1: Factory?.ShowName();            break;
-                    case ConsoleKey.D2: AbstractFactory?.ShowResult();  break;
-                    case ConsoleKey.D3: TestSingleton.show();           break;
-                    case ConsoleKey.D4: TestPrototype.show_res();       break;
-                    case ConsoleKey.D5: TestBuilder.ShowResult();       break;
-                    case ConsoleKey.D6: TestStrategy.Test_Strategy();   break;
-                    case ConsoleKey.D7: TestObserver.ShowResult();      break;
-                    case ConsoleKey.D8: TestCommand.ShowResult();       break;
-                    case ConsoleKey.D9: TestTemplate.ShowResult();      break;
+                    case "й": case "q": case "Q": case "Й": return;
+                    case "1": Factory?.ShowName();           break;
+                    case "2": AbstractFactory?.ShowResult(); break;
+                    case "3": TestSingleton.show();          break;
+                    case "4": TestPrototype.show_res();      break;
+                    case "5": TestBuilder.ShowResult();      break;
+                    case "6": TestStrategy.Test_Strategy();  break;
+                    case "7": TestObserver.ShowResult();     break;
+                    case "8": TestCommand.ShowResult();      break;
+                    case "9": TestTemplate.ShowResult();     break;
+                    case "10": TestIterator.ShowResult();    break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
                 }
-            } while (result != ConsoleKey.Q);
+            }
         }
     }
 }
