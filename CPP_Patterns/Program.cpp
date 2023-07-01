@@ -5,6 +5,7 @@
 #include "Creational_patterns/Builder.hpp"
 #include "Behavioral_patterns/Strategy.hpp"
 #include "Behavioral_patterns/Observer.hpp"
+#include "Behavioral_patterns/Command.hpp"
 
 namespace Pattern {
 	using std::unique_ptr;
@@ -31,7 +32,8 @@ namespace Pattern {
 				"\n5 - Паттерн \"Строитель\""
 				"\n6 - Паттерн \"Стратегия\""
 				"\n7 - Паттерн \"Наблюдатель\""
-				"\n8 - Паттерн \"\""
+				"\n8 - Паттерн \"Команда\""
+				"\n9 - Паттерн \"Команда\""
 				"\n";
 			do {
 				cout << info;
@@ -44,6 +46,7 @@ namespace Pattern {
 				case 53: Creational::test_builder();           break;
 				case 54: Behavioral::test_strategey();         break;
 				case 55: Behavioral::test_observer();          break;
+				case 56: Behavioral::test_command();           break;
 				default:
 					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
 					break;

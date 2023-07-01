@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Behavioral_patterns\Command.hpp" />
     <ClInclude Include="Behavioral_patterns\Observer.hpp" />
     <ClInclude Include="Behavioral_patterns\Strategy.hpp" />
     <ClInclude Include="Creational_patterns\AbstractFactory.h" />
