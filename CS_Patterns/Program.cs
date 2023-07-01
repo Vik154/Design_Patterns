@@ -38,7 +38,8 @@ namespace Patterns {
                 "\n4 - Паттерн \"Прототип\"" +
                 "\n5 - Паттерн \"Строитель\"" +
                 "\n6 - Паттерн \"Стратегия\"" +
-                "\n7 - Паттерн \"Стратегия\"" +
+                "\n7 - Паттерн \"Наблюдатель\"" +
+                "\n8 - Паттерн \"\"" +
                 "\n";
             do {
                 Console.WriteLine(info);
@@ -51,6 +52,7 @@ namespace Patterns {
                     case ConsoleKey.D4: TestPrototype.show_res(); break;
                     case ConsoleKey.D5: TestBuilder.ShowResult(); break;
                     case ConsoleKey.D6: TestStrategy.Test_Strategy(); break;
+                    case ConsoleKey.D7: TestObserver.ShowResult(); break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
