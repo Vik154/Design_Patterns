@@ -4,6 +4,7 @@
 #include "Creational_patterns/Prototype.hpp"
 #include "Creational_patterns/Builder.hpp"
 #include "Behavioral_patterns/Strategy.hpp"
+#include "Behavioral_patterns/Observer.hpp"
 
 namespace Pattern {
 	using std::unique_ptr;
@@ -29,6 +30,8 @@ namespace Pattern {
 				"\n4 - Паттерн \"Прототип\""
 				"\n5 - Паттерн \"Строитель\""
 				"\n6 - Паттерн \"Стратегия\""
+				"\n7 - Паттерн \"Наблюдатель\""
+				"\n8 - Паттерн \"\""
 				"\n";
 			do {
 				cout << info;
@@ -40,6 +43,7 @@ namespace Pattern {
 				case 52: Creational::test_prototype();         break;
 				case 53: Creational::test_builder();           break;
 				case 54: Behavioral::test_strategey();         break;
+				case 55: Behavioral::test_observer();          break;
 				default:
 					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
 					break;
@@ -51,7 +55,6 @@ namespace Pattern {
 		unique_ptr<Creational::FactoryMethod> _factory_method;
 		// Пример паттерна "Абстракная фабрика"
 		unique_ptr<Creational::AbstractFactoryTest> _abstract_factory;
-
 	};
 }
 
