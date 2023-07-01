@@ -7,4 +7,5 @@ using System.Threading.Tasks;
 namespace CS_Patterns {
     internal class Class1 {
     }
+    class A { }
 }
