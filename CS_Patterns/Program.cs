@@ -54,7 +54,6 @@ namespace Patterns {
                     case ConsoleKey.D6: TestStrategy.Test_Strategy();   break;
                     case ConsoleKey.D7: TestObserver.ShowResult();      break;
                     case ConsoleKey.D8: TestCommand.ShowResult();       break;
-                    case ConsoleKey.D9: TESTING.TestCommit.test_commit(); break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
