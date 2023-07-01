@@ -1,17 +1,17 @@
 ﻿using Patterns.Behavioral;
 using Patterns.Creational;
 
+
 namespace Patterns {
     internal class Program {
-
         static void Main(string[] args) {
             ShowResult show = new ShowResult();
             show.Run();
         }
     }
+
     /// <summary> Консольное отображение </summary>
     internal class ShowResult {
-
         public ShowResult() { 
             // ---- Фабричный метод ---------
             Factory = new Patterns.Creational.FactoryMethod();
@@ -26,7 +26,6 @@ namespace Patterns {
         /// <summary> Паттерн - "Абстрактная фаюрика" </summary>
         private readonly Patterns.Creational.Clients? AbstractFactory;
         private RedFactory RedFactory;
-        
 
         public void Run() {
             ConsoleKey result;
