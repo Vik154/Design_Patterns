@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Behavioral_patterns\Command.py" />
+    <Compile Include="Behavioral_patterns\Iterator.py" />
     <Compile Include="Behavioral_patterns\Observer.py" />
     <Compile Include="Behavioral_patterns\Strategy.py" />
     <Compile Include="Behavioral_patterns\TemplateMethod.py" />
