@@ -24,6 +24,7 @@
     <Compile Include="Behavioral_patterns\Command.py" />
     <Compile Include="Behavioral_patterns\Iterator.py" />
     <Compile Include="Behavioral_patterns\Observer.py" />
+    <Compile Include="Behavioral_patterns\State.py" />
     <Compile Include="Behavioral_patterns\Strategy.py" />
     <Compile Include="Behavioral_patterns\TemplateMethod.py" />
     <Compile Include="Creational_patterns\AbstractFactory.py" />
