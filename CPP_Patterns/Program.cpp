@@ -8,6 +8,7 @@
 #include "Behavioral_patterns/Command.hpp"
 #include "Behavioral_patterns/TemplateMethod.hpp"
 #include "Behavioral_patterns/Iterator.hpp"
+#include "Behavioral_patterns/State.hpp"
 
 
 namespace Pattern {
@@ -64,6 +65,7 @@ namespace Pattern {
 					case 8: Behavioral::test_command();           break;
 					case 9: Behavioral::test_template();          break;
 					case 10: Behavioral::test_iterator();         break;
+					case 11: Behavioral::test_state();            break;
 					default: cin.clear();                         break;
 				}
 			}
