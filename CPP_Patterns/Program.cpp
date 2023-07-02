@@ -7,6 +7,7 @@
 #include "Behavioral_patterns/Observer.hpp"
 #include "Behavioral_patterns/Command.hpp"
 #include "Behavioral_patterns/TemplateMethod.hpp"
+#include "Behavioral_patterns/Iterator.hpp"
 
 
 namespace Pattern {
@@ -22,9 +23,9 @@ namespace Pattern {
 			_factory_method(make_unique<Creational::FactoryMethod>()),
 			_abstract_factory(make_unique<Creational::AbstractFactoryTest>())
 		{}
-		
+
 		void run() {
-			char result;
+			string result;
 			string info = "\nВыберите команду:"
 				"\nq - Выход"
 				"\n1 - Паттерн \"Фабричный метод\""
@@ -36,26 +37,38 @@ namespace Pattern {
 				"\n7 - Паттерн \"Наблюдатель\""
 				"\n8 - Паттерн \"Команда\""
 				"\n9 - Паттерн \"Шаблонный метод\""
+				"\n10 - Паттерн \"Итератор\""
 				"\n";
-			do {
+
+			while (true) {
 				cout << info;
 				cin >> result;
-				switch (result) {
-				case 49: _factory_method->show_name_creator(); break;
-				case 50: _abstract_factory->show_result();     break;
-				case 51: Creational::test_singleton();         break;
-				case 52: Creational::test_prototype();         break;
-				case 53: Creational::test_builder();           break;
-				case 54: Behavioral::test_strategey();         break;
-				case 55: Behavioral::test_observer();          break;
-				case 56: Behavioral::test_command();           break;
-				case 57: Behavioral::test_template();          break;
-				default:
+
+				try {
+					if (result == "q") return;
+					int res = stoi(result); }
+				catch (...) {
 					cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
-					break;
+					cin.clear();
+					continue;
 				}
-			} while (result != 'q');
+
+				switch (stoi(result)) {
+					case 1: _factory_method->show_name_creator(); break;
+					case 2: _abstract_factory->show_result();     break;
+					case 3: Creational::test_singleton();         break;
+					case 4: Creational::test_prototype();         break;
+					case 5: Creational::test_builder();           break;
+					case 6: Behavioral::test_strategey();         break;
+					case 7: Behavioral::test_observer();          break;
+					case 8: Behavioral::test_command();           break;
+					case 9: Behavioral::test_template();          break;
+					case 10: Behavioral::test_iterator();         break;
+					default: cin.clear();                         break;
+				}
+			}
 		}
+
 	private:
 		// Пример паттерна "Фабричный метод"
 		unique_ptr<Creational::FactoryMethod> _factory_method;
