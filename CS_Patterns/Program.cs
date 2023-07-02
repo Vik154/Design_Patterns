@@ -41,6 +41,7 @@ namespace Patterns {
                 "\n8 - Паттерн \"Команда\"" +
                 "\n9 - Паттерн \"Шаблонный метод\"" +
                 "\n10 - Паттерн \"Итератор\"" +
+                "\n11 - Паттерн \"Состояние\"" +
                 "\n";
             while (true) {
                 Console.WriteLine(info);
@@ -58,6 +59,7 @@ namespace Patterns {
                     case "8": TestCommand.ShowResult();      break;
                     case "9": TestTemplate.ShowResult();     break;
                     case "10": TestIterator.ShowResult();    break;
+                    case "11": TestState.ShowResult();       break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
