@@ -9,6 +9,7 @@
 #include "Behavioral_patterns/TemplateMethod.hpp"
 #include "Behavioral_patterns/Iterator.hpp"
 #include "Behavioral_patterns/State.hpp"
+#include "Behavioral_patterns/Chain_of_responsibility.hpp"
 
 
 namespace Pattern {
@@ -39,7 +40,8 @@ namespace Pattern {
 				"\n8 - Паттерн \"Команда\""
 				"\n9 - Паттерн \"Шаблонный метод\""
 				"\n10 - Паттерн \"Итератор\""
-				"\n10 - Паттерн \"Состояние\""
+				"\n11 - Паттерн \"Состояние\""
+				"\n12 - Паттерн \"Цепочка обязанностей\""
 				"\n";
 
 			while (true) {
@@ -67,6 +69,7 @@ namespace Pattern {
 					case 9: Behavioral::test_template();          break;
 					case 10: Behavioral::test_iterator();         break;
 					case 11: Behavioral::test_state();            break;
+					case 12: Behavioral::test_chain();            break;
 					default: cin.clear();                         break;
 				}
 			}
