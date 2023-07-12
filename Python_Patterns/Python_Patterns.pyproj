@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Behavioral_patterns\Chain_of_responsibility.py" />
     <Compile Include="Behavioral_patterns\Command.py" />
     <Compile Include="Behavioral_patterns\Iterator.py" />
     <Compile Include="Behavioral_patterns\Observer.py" />

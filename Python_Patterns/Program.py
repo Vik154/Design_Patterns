@@ -9,6 +9,7 @@ from Behavioral_patterns.Observer import test_observer
 from Behavioral_patterns.TemplateMethod import test_template
 from Behavioral_patterns.Iterator import test_iterator
 from Behavioral_patterns.State import test_state
+from Behavioral_patterns.Chain_of_responsibility import test_chain
 
 
 class Handler():
@@ -31,6 +32,7 @@ class Handler():
         \n9 - Паттерн \"Наблюдатель\" \
         \n10 - Паттерн \"Итератор\" \
         \n11 - Паттерн \"Состояние\" \
+        \n12 - Паттерн \"Цепочка обязанностей\" \
         \n";
 
         while (True):
@@ -49,6 +51,7 @@ class Handler():
                 case '9': test_template();               continue;
                 case '10': test_iterator();              continue;
                 case '11': test_state();                 continue;
+                case '12': test_chain();                 continue;
                 case _:
                     print("Не тыкай чё-попало")
                 

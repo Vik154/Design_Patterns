@@ -1,4 +1,4 @@
-﻿/*Паттерн Цепочка Обязанностей (Chain of responsibility) */
+﻿/* Паттерн Цепочка Обязанностей (Chain of responsibility) */
 /* Источник - https://www.bestprog.net/ru/2021/09/25/patterns-the-chain-of-responsibility-pattern-implementation-in-c-ru/ и др. */
 
 /* Цепочка Обязанностей (Chain of responsibility) - поведенческий шаблон проектирования,
