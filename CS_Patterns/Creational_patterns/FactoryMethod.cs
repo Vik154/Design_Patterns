@@ -90,17 +90,15 @@ internal class MonolithicDeveloper : Developer {
 //-----------------------------------------------------------------------------------------
 
 /// <summary> Класс для теста паттерна "Фабричный метод" из main </summary>
-internal class FactoryMethod { 
-    public FactoryMethod() {
-        DeveloperList = new List<Developer> { 
+internal static class TestFactoryMethod { 
+    
+    public static void ShowResult() {
+        List<Developer>  DeveloperList = new List<Developer> {
             new PanelDeveloper("ООО \"Шараш-Монтаж Строй\""),
             new WoodDeveloper("ООО \"ВровеньВыпирает Строй\""),
             new BrickDeveloper("ООО \"МонтажКосяк Строй\""),
             new MonolithicDeveloper("ООО \"РукиОткудаНАДА Строй\"")
         };
-    }
-    public List<Developer>? DeveloperList { get; set; }
-    public void ShowName() {
         for (int i = 0; i < 4; ++i) {
             Console.Write($"Компания: {DeveloperList?[i].Name}\tЗаявляет: ");
             DeveloperList?[i].Create();
