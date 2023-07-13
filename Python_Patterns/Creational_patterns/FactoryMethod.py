@@ -131,3 +131,8 @@ class ReleaseFactoryMethod():
     def show(self):
         print(f"{self._dog._creator_name} говорит {self._dog._product}")
         print(f"{self._cat._creator_name} говорит {self._cat._product}")
+
+
+def test_factory_method():
+    factory_method = ReleaseFactoryMethod()
+    factory_method.show()

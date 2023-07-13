@@ -1,6 +1,6 @@
 ﻿from Behavioral_patterns.Command import test_command
 from Creational_patterns.Prototype import test_prototype
-import FactoryMethod
+from Creational_patterns.FactoryMethod import test_factory_method
 from Creational_patterns.AbstractFactory import *
 from Creational_patterns.Singleton import test_singleton
 from Creational_patterns.Builder import test_builder
@@ -14,7 +14,6 @@ from Behavioral_patterns.Chain_of_responsibility import test_chain
 
 class Handler():
     def __init__(self):
-        self._factory_method = FactoryMethod.ReleaseFactoryMethod()
         self._abstract_factory = FactoryTest()
 
     def run(self):
@@ -40,7 +39,7 @@ class Handler():
             match key:
                 case 'q': return;
                 case 'й': return;
-                case '1': self._factory_method.show();   continue;
+                case '1': test_factory_method();   continue;
                 case '2': self._abstract_factory.show(); continue;
                 case '3': test_singleton();              continue;
                 case '4': test_prototype();              continue;
