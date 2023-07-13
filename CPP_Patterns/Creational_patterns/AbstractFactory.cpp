@@ -1,33 +1,33 @@
-#include "AbstractFactory.h"
+п»ї#include "AbstractFactory.h"
 
 namespace Creational {
 
-	// Конструктор конкретного продукта
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРЅРєСЂРµС‚РЅРѕРіРѕ РїСЂРѕРґСѓРєС‚Р°
 	LinuxButton::LinuxButton(const string& wtype)     : _widget_type(wtype) {}
 	LinuxMenu::LinuxMenu(const string& wtype)         : _widget_type(wtype) {}
 	WindowsButton::WindowsButton(const string& wtype) : _widget_type(wtype) {}
 	WindowsMenu::WindowsMenu(const string& wtype)     : _widget_type(wtype) {}
 
-	// Методы конкретных продуктов (реализация интерфейса Widget)
-	void LinuxMenu::make_widget()     { cout << "Создано меню Linux\n"; }
-	void LinuxButton::make_widget()   { cout << "Создана кнопка Linux\n"; }
-	void WindowsButton::make_widget() { cout << "Создана кнопка Windows\n"; }
-	void WindowsMenu::make_widget()   { cout << "Создано меню Windows\n"; }
+	// РњРµС‚РѕРґС‹ РєРѕРЅРєСЂРµС‚РЅС‹С… РїСЂРѕРґСѓРєС‚РѕРІ (СЂРµР°Р»РёР·Р°С†РёСЏ РёРЅС‚РµСЂС„РµР№СЃР° Widget)
+	void LinuxMenu::make_widget()     { cout << "РЎРѕР·РґР°РЅРѕ РјРµРЅСЋ Linux\n"; }
+	void LinuxButton::make_widget()   { cout << "РЎРѕР·РґР°РЅР° РєРЅРѕРїРєР° Linux\n"; }
+	void WindowsButton::make_widget() { cout << "РЎРѕР·РґР°РЅР° РєРЅРѕРїРєР° Windows\n"; }
+	void WindowsMenu::make_widget()   { cout << "РЎРѕР·РґР°РЅРѕ РјРµРЅСЋ Windows\n"; }
 
 	const string& LinuxButton::get_name()   { return _widget_type; }
 	const string& LinuxMenu::get_name()     { return _widget_type; }
 	const string& WindowsButton::get_name() { return _widget_type; }
 	const string& WindowsMenu::get_name()   { return _widget_type; }
 
-	// Реализация интерфейса конкретных фабрик
+	// Р РµР°Р»РёР·Р°С†РёСЏ РёРЅС‚РµСЂС„РµР№СЃР° РєРѕРЅРєСЂРµС‚РЅС‹С… С„Р°Р±СЂРёРє
 	// Linux
 	LinuxFactory::LinuxFactory(const string& fname) : _name_factory(fname) {}
 
 	unique_ptr<Widget> LinuxFactory::create_button() {
-		return make_unique<LinuxButton>("Linux кнопка");
+		return make_unique<LinuxButton>("Linux РєРЅРѕРїРєР°");
 	}
 	unique_ptr<Widget> LinuxFactory::create_menu() {
-		return make_unique<LinuxMenu>("Linux меню");
+		return make_unique<LinuxMenu>("Linux РјРµРЅСЋ");
 	}
 	const string& LinuxFactory::get_name() { return _name_factory; }
 
@@ -35,26 +35,30 @@ namespace Creational {
 	WindowsFactory::WindowsFactory(const string& fname) : _name_factory(fname) {}
 
 	unique_ptr<Widget> WindowsFactory::create_button() {
-		return make_unique<WindowsButton>("Windows кнопка");
+		return make_unique<WindowsButton>("Windows РєРЅРѕРїРєР°");
 	}
 	unique_ptr<Widget> WindowsFactory::create_menu() {
-		return make_unique<WindowsMenu>("Windows меню");
+		return make_unique<WindowsMenu>("Windows РјРµРЅСЋ");
 	}
 	const string& WindowsFactory::get_name() { return _name_factory; }
 	//----------------------------------------------------
 
-	// Реализация клиента
+	// Р РµР°Р»РёР·Р°С†РёСЏ РєР»РёРµРЅС‚Р°
 	Client::Client(unique_ptr<WidgetsFactory>&& concrete_factory) :
 		_button_widget(concrete_factory->create_button()),
 		_menu_widget(concrete_factory->create_menu())
 	{ }
 
 	void Client::show_result() {
-		cout << _button_widget->get_name() << " говорит: ";
+		cout << _button_widget->get_name() << " РіРѕРІРѕСЂРёС‚: ";
 		_button_widget->make_widget();
-		cout << _menu_widget->get_name() << " говорит: ";
+		cout << _menu_widget->get_name() << " РіРѕРІРѕСЂРёС‚: ";
 		_menu_widget->make_widget();
 		cout << "--------------------------------------\n";
 	}
 	//----------------------------------------------------------
+	void test_abstract_factory() {
+		unique_ptr<AbstractFactoryTest> _abstract_factory = make_unique<AbstractFactoryTest>();
+		_abstract_factory->show_result();
+	}
 }
