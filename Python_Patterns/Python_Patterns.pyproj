@@ -40,6 +40,7 @@
     <Compile Include="Program.py" />
     <Compile Include="Structural_patterns\Adapter.py" />
     <Compile Include="Structural_patterns\Decorator.py" />
+    <Compile Include="Structural_patterns\Facade.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

@@ -16,6 +16,7 @@ from Behavioral_patterns.Memento                 import test_memento
 from Behavioral_patterns.Visitor                 import test_visitor
 from Structural_patterns.Decorator               import test_decorator
 from Structural_patterns.Adapter                 import test_adapter
+from Structural_patterns.Facade                  import test_facade
 
 
 def run():
@@ -39,6 +40,7 @@ def run():
     \n16 - Паттерн \"Посетитель\" \
     \n17 - Паттерн \"Декоратор\" \
     \n18 - Паттерн \"Адаптер\" \
+    \n19 - Паттерн \"Фасад\" \
     \n";
 
     while (True):
@@ -64,6 +66,7 @@ def run():
             case '16': test_visitor();          continue;
             case '17': test_decorator();        continue;
             case '18': test_adapter();          continue;
+            case '19': test_facade();           continue;
             case _:
                 print("Не тыкай чё-попало")
                 
