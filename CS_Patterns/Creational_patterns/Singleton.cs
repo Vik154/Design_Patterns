@@ -76,7 +76,7 @@ internal static class TestSingleton {
         logger.Log($"log number: {Thread.CurrentThread.ManagedThreadId}");
     }
 
-    public static void show() {
+    public static void ShowResult() {
         Thread? thread = null;
         for (int i = 0; i < Environment.ProcessorCount; ++i) {
             thread = new Thread(work);

@@ -41,7 +41,7 @@ namespace Patterns {
                     case "й": case "q": case "Q": case "Й": return;
                     case "1": TestFactoryMethod.ShowResult();   break;
                     case "2": TestAbstractFactory.ShowResult(); break;
-                    case "3": TestSingleton.show();             break;
+                    case "3": TestSingleton.ShowResult();       break;
                     case "4": TestPrototype.show_res();         break;
                     case "5": TestBuilder.ShowResult();         break;
                     case "6": TestStrategy.Test_Strategy();     break;
