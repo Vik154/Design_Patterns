@@ -23,7 +23,6 @@ namespace Pattern {
 	class Handler final {
 	public:
 		Handler() :
-			_factory_method(make_unique<Creational::FactoryMethod>()),
 			_abstract_factory(make_unique<Creational::AbstractFactoryTest>())
 		{}
 
@@ -59,7 +58,7 @@ namespace Pattern {
 				}
 
 				switch (stoi(result)) {
-					case 1: _factory_method->show_name_creator(); break;
+					case 1: Creational::test_factory_method();    break;
 					case 2: _abstract_factory->show_result();     break;
 					case 3: Creational::test_singleton();         break;
 					case 4: Creational::test_prototype();         break;
@@ -71,15 +70,13 @@ namespace Pattern {
 					case 10: Behavioral::test_iterator();         break;
 					case 11: Behavioral::test_state();            break;
 					case 12: Behavioral::test_chain();            break;
-					case 13: Behavioral::test_interpreter(); break;
+					case 13: Behavioral::test_interpreter();      break;
 					default: cin.clear();                         break;
 				}
 			}
 		}
 
 	private:
-		// Пример паттерна "Фабричный метод"
-		unique_ptr<Creational::FactoryMethod> _factory_method;
 		// Пример паттерна "Абстракная фабрика"
 		unique_ptr<Creational::AbstractFactoryTest> _abstract_factory;
 	};
