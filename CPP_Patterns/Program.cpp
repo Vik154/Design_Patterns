@@ -16,6 +16,7 @@
 #include "Behavioral_patterns/Visitor.hpp"
 #include "Structural_patterns/Decorator.hpp"
 #include "Structural_patterns/Adapter.hpp"
+#include "Structural_patterns/Facade.hpp"
 
 
 namespace Pattern {
@@ -48,6 +49,7 @@ namespace Pattern {
 			"\n16 - Паттерн \"Посетитель\""
 			"\n17 - Паттерн \"Декоратор\""
 			"\n18 - Паттерн \"Адаптер\""
+			"\n19 - Паттерн \"Фасад\""
 			"\n";
 
 		while (true) {
@@ -83,6 +85,7 @@ namespace Pattern {
 			case 16: Behavioral::test_visitor();          break;
 			case 17: Structural::test_decorator();        break;
 			case 18: Structural::test_adapter();          break;
+			case 19: Structural::test_facade();          break;
 			default: cin.clear();                         break;
 			}
 		}

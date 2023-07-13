@@ -153,6 +153,7 @@
     <ClInclude Include="Creational_patterns\Singleton.hpp" />
     <ClInclude Include="Structural_patterns\Adapter.hpp" />
     <ClInclude Include="Structural_patterns\Decorator.hpp" />
+    <ClInclude Include="Structural_patterns\Facade.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Creational_patterns\AbstractFactory.cpp" />
