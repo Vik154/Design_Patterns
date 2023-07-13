@@ -212,4 +212,5 @@ namespace Creational {
 		}
 	};
 	//----------------------------------------------------------
+	void test_abstract_factory();
 }

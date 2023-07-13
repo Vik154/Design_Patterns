@@ -22,9 +22,7 @@ namespace Pattern {
 
 	class Handler final {
 	public:
-		Handler() :
-			_abstract_factory(make_unique<Creational::AbstractFactoryTest>())
-		{}
+		Handler() = default;
 
 		void run() {
 			string result;
@@ -59,7 +57,7 @@ namespace Pattern {
 
 				switch (stoi(result)) {
 					case 1: Creational::test_factory_method();    break;
-					case 2: _abstract_factory->show_result();     break;
+					case 2: Creational::test_abstract_factory();  break;
 					case 3: Creational::test_singleton();         break;
 					case 4: Creational::test_prototype();         break;
 					case 5: Creational::test_builder();           break;
@@ -75,10 +73,6 @@ namespace Pattern {
 				}
 			}
 		}
-
-	private:
-		// Пример паттерна "Абстракная фабрика"
-		unique_ptr<Creational::AbstractFactoryTest> _abstract_factory;
 	};
 }
 
