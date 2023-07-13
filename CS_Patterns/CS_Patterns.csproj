@@ -11,8 +11,4 @@
     <None Remove="Behavioral_patterns\Mediator.cs~RF3a998c7.TMP" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Structural_patterns\" />
-  </ItemGroup>
-
 </Project>
