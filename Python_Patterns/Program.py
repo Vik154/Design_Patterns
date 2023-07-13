@@ -15,6 +15,7 @@ from Behavioral_patterns.Mediator                import test_mediator
 from Behavioral_patterns.Memento                 import test_memento
 from Behavioral_patterns.Visitor                 import test_visitor
 from Structural_patterns.Decorator               import test_decorator
+from Structural_patterns.Adapter                 import test_adapter
 
 
 def run():
@@ -37,6 +38,7 @@ def run():
     \n15 - Паттерн \"Хранитель\" \
     \n16 - Паттерн \"Посетитель\" \
     \n17 - Паттерн \"Декоратор\" \
+    \n18 - Паттерн \"Адаптер\" \
     \n";
 
     while (True):
@@ -61,6 +63,7 @@ def run():
             case '15': test_memento();          continue;
             case '16': test_visitor();          continue;
             case '17': test_decorator();        continue;
+            case '18': test_adapter();          continue;
             case _:
                 print("Не тыкай чё-попало")
                 
