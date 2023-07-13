@@ -42,7 +42,7 @@ namespace Patterns {
                     case "1": TestFactoryMethod.ShowResult();   break;
                     case "2": TestAbstractFactory.ShowResult(); break;
                     case "3": TestSingleton.ShowResult();       break;
-                    case "4": TestPrototype.show_res();         break;
+                    case "4": TestPrototype.ShowResult();       break;
                     case "5": TestBuilder.ShowResult();         break;
                     case "6": TestStrategy.Test_Strategy();     break;
                     case "7": TestObserver.ShowResult();        break;
