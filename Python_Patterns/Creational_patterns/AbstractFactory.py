@@ -184,3 +184,7 @@ class FactoryTest():
         print(f"Ford заявил: {fres1} и {fres2}")
         print(f"BMW заявил: {bres1} и {bres2}")
 # --------------------------------------------------------------
+
+def test_abstract_factory():
+    abstract_factory = FactoryTest()
+    abstract_factory.show()
