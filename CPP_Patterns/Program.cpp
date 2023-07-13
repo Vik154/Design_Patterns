@@ -11,6 +11,7 @@
 #include "Behavioral_patterns/State.hpp"
 #include "Behavioral_patterns/Chain_of_responsibility.hpp"
 #include "Behavioral_patterns/Interpreter.hpp"
+#include "Behavioral_patterns/Mediator.hpp"
 
 
 namespace Pattern {
@@ -38,6 +39,7 @@ namespace Pattern {
 			"\n11 - Паттерн \"Состояние\""
 			"\n12 - Паттерн \"Цепочка обязанностей\""
 			"\n13 - Паттерн \"Интерпретатор\""
+			"\n14 - Паттерн \"Посредник\""
 			"\n";
 
 		while (true) {
@@ -68,6 +70,7 @@ namespace Pattern {
 			case 11: Behavioral::test_state();            break;
 			case 12: Behavioral::test_chain();            break;
 			case 13: Behavioral::test_interpreter();      break;
+			case 14: Behavioral::test_mediator();         break;
 			default: cin.clear();                         break;
 			}
 		}
