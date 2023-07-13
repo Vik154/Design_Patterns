@@ -13,6 +13,7 @@
 #include "Behavioral_patterns/Interpreter.hpp"
 #include "Behavioral_patterns/Mediator.hpp"
 #include "Behavioral_patterns/Memento.hpp"
+#include "Behavioral_patterns/Visitor.hpp"
 
 
 namespace Pattern {
@@ -42,6 +43,7 @@ namespace Pattern {
 			"\n13 - Паттерн \"Интерпретатор\""
 			"\n14 - Паттерн \"Посредник\""
 			"\n15 - Паттерн \"Хранитель\""
+			"\n16 - Паттерн \"Посетитель\""
 			"\n";
 
 		while (true) {
@@ -50,6 +52,7 @@ namespace Pattern {
 
 			try {
 				if (result == "q") return;
+				if (result == "й") return;
 				int res = stoi(result);
 			}
 			catch (...) {
@@ -74,6 +77,7 @@ namespace Pattern {
 			case 13: Behavioral::test_interpreter();      break;
 			case 14: Behavioral::test_mediator();         break;
 			case 15: Behavioral::test_memento();          break;
+			case 16: Behavioral::test_visitor();          break;
 			default: cin.clear();                         break;
 			}
 		}
