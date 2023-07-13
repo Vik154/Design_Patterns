@@ -38,6 +38,7 @@
     <Compile Include="Creational_patterns\Prototype.py" />
     <Compile Include="Creational_patterns\Singleton.py" />
     <Compile Include="Program.py" />
+    <Compile Include="Structural_patterns\Decorator.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
