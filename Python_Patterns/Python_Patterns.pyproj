@@ -31,6 +31,7 @@
     <Compile Include="Behavioral_patterns\State.py" />
     <Compile Include="Behavioral_patterns\Strategy.py" />
     <Compile Include="Behavioral_patterns\TemplateMethod.py" />
+    <Compile Include="Behavioral_patterns\Visitor.py" />
     <Compile Include="Creational_patterns\AbstractFactory.py" />
     <Compile Include="Creational_patterns\Builder.py" />
     <Compile Include="Creational_patterns\FactoryMethod.py" />
