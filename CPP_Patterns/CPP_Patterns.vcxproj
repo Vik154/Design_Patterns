@@ -137,6 +137,7 @@
   <ItemGroup>
     <ClInclude Include="Behavioral_patterns\Chain_of_responsibility.hpp" />
     <ClInclude Include="Behavioral_patterns\Command.hpp" />
+    <ClInclude Include="Behavioral_patterns\Interpreter.hpp" />
     <ClInclude Include="Behavioral_patterns\Iterator.hpp" />
     <ClInclude Include="Behavioral_patterns\Observer.hpp" />
     <ClInclude Include="Behavioral_patterns\State.hpp" />

@@ -10,6 +10,7 @@
 #include "Behavioral_patterns/Iterator.hpp"
 #include "Behavioral_patterns/State.hpp"
 #include "Behavioral_patterns/Chain_of_responsibility.hpp"
+#include "Behavioral_patterns/Interpreter.hpp"
 
 
 namespace Pattern {
@@ -70,6 +71,7 @@ namespace Pattern {
 					case 10: Behavioral::test_iterator();         break;
 					case 11: Behavioral::test_state();            break;
 					case 12: Behavioral::test_chain();            break;
+					case 13: Behavioral::test_interpreter(); break;
 					default: cin.clear();                         break;
 				}
 			}
