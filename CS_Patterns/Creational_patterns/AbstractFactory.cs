@@ -1,8 +1,6 @@
 ﻿/* Паттерн "Абстрактная фабрика" (Abstract Factory) */
 /* Источник - https://metanit.com/sharp/patterns/2.2.php и др. */
 
-using System.Collections;
-
 namespace Patterns.Creational;
 
 // Когда использовать абстрактную фабрику:
@@ -123,5 +121,14 @@ internal class Clients {
         var hotres = _hotDrinks?.MakeHotProduct();
         var iceres = _coolDrinks?.MakeCoolProduct();
         Console.WriteLine($"Оповещение фабрики: {hotres} и {iceres}");
+    }
+}
+
+internal static class TestAbstractFactory {
+    
+    public static void ShowResult() {
+        RedFactory redFactory = new RedFactory();
+        Clients abstractFactory = new Clients(redFactory);
+        abstractFactory.ShowResult();
     }
 }
