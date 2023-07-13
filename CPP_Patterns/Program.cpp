@@ -52,7 +52,6 @@ namespace Pattern {
 
 			try {
 				if (result == "q") return;
-				if (result == "й") return;
 				int res = stoi(result);
 			}
 			catch (...) {
