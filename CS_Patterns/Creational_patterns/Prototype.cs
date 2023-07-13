@@ -74,7 +74,7 @@ internal static class TestPrototype {
     }
     static private List<IStudentPrototype> students;
 
-    static public void show_res() {
+    static public void ShowResult() {
         IStudentPrototype student1 = students[1].Clone();
         IStudentPrototype student2 = students[2].Clone();
         Console.WriteLine($"Name: {student1.Name}; id: {student1.Id}");
