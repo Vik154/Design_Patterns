@@ -17,6 +17,7 @@ from Behavioral_patterns.Visitor                 import test_visitor
 from Structural_patterns.Decorator               import test_decorator
 from Structural_patterns.Adapter                 import test_adapter
 from Structural_patterns.Facade                  import test_facade
+from Structural_patterns.Composite               import test_composite
 
 
 def run():
@@ -41,6 +42,7 @@ def run():
     \n17 - Паттерн \"Декоратор\" \
     \n18 - Паттерн \"Адаптер\" \
     \n19 - Паттерн \"Фасад\" \
+    \n20 - Паттерн \"Компоновщик\" \
     \n";
 
     while (True):
@@ -67,10 +69,11 @@ def run():
             case '17': test_decorator();        continue;
             case '18': test_adapter();          continue;
             case '19': test_facade();           continue;
+            case '20': test_composite();        continue;
             case _:
                 print("Не тыкай чё-попало")
                 
-
+                
 # -------------------------------------------------------
 if __name__ == "__main__":
     run()
