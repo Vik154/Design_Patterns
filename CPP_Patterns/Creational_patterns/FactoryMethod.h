@@ -77,4 +77,6 @@ namespace Creational {
 	private:
 		vector<unique_ptr<ShapeCreator>> _shape_creator;
 	};
+
+	void test_factory_method();
 }

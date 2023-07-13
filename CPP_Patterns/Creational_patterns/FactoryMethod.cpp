@@ -59,4 +59,9 @@ namespace Creational {
 			_shape_creator[i]->create_product();
 		}
 	}
+
+	void test_factory_method() {
+		unique_ptr<FactoryMethod> _factory_method = make_unique<FactoryMethod>();
+		_factory_method->show_name_creator();
+	}
 }
