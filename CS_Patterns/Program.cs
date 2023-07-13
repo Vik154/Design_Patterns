@@ -31,6 +31,8 @@ namespace Patterns {
                 "\n11 - Паттерн \"Состояние\"" +
                 "\n12 - Паттерн \"Цепочка Обязанностей\"" +
                 "\n13 - Паттерн \"Интерпретатор\"" +
+                "\n14 - Паттерн \"Посредник\"" +
+                "\n15 - Паттерн \"Хранитель\"" +
                 "\n";
 
             while (true) {
@@ -52,6 +54,8 @@ namespace Patterns {
                     case "11": TestState.ShowResult();          break;
                     case "12": TestChain.ShowResult();          break;
                     case "13": TestInterpreter.ShowResult();    break;
+                    case "14": TestMediator.ShowResult();       break;
+                    case "15": TestMemento.ShowResult();        break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
