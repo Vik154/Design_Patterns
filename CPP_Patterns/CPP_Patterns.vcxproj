@@ -140,6 +140,7 @@
     <ClInclude Include="Behavioral_patterns\Interpreter.hpp" />
     <ClInclude Include="Behavioral_patterns\Iterator.hpp" />
     <ClInclude Include="Behavioral_patterns\Mediator.hpp" />
+    <ClInclude Include="Behavioral_patterns\Memento.hpp" />
     <ClInclude Include="Behavioral_patterns\Observer.hpp" />
     <ClInclude Include="Behavioral_patterns\State.hpp" />
     <ClInclude Include="Behavioral_patterns\Strategy.hpp" />
