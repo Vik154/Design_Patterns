@@ -88,7 +88,7 @@ internal class ContextSort {
 
 internal static class TestStrategy {
 
-    public static void Test_Strategy() {
+    public static void ShowResult() {
         contextSort = new ContextSort(lst1, quick);
         contextSort.ShowResult();
         contextSort = new ContextSort(lst2, merge);
