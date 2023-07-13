@@ -1,5 +1,4 @@
-﻿from Behavioral_patterns.Command                 import test_command
-from Creational_patterns.Prototype               import test_prototype
+﻿from Creational_patterns.Prototype               import test_prototype
 from Creational_patterns.FactoryMethod           import test_factory_method
 from Creational_patterns.AbstractFactory         import test_abstract_factory
 from Creational_patterns.Singleton               import test_singleton
@@ -10,23 +9,26 @@ from Behavioral_patterns.TemplateMethod          import test_template
 from Behavioral_patterns.Iterator                import test_iterator
 from Behavioral_patterns.State                   import test_state
 from Behavioral_patterns.Chain_of_responsibility import test_chain
+from Behavioral_patterns.Command                 import test_command
+from Behavioral_patterns.Interpreter             import test_interpreter
 
 
 def run():
     info = "\nВыберите команду: \
-    \nq - Выход \
-    \n1 - Паттерн \"Фабричный метод\" \
-    \n2 - Паттерн \"Абстрактнрая фабрика\" \
-    \n3 - Паттерн \"Singleton\" \
-    \n4 - Паттерн \"Прототип\" \
-    \n5 - Паттерн \"Строитель\" \
-    \n6 - Паттерн \"Стратегия\" \
-    \n7 - Паттерн \"Наблюдатель\" \
-    \n8 - Паттерн \"Команда\" \
-    \n9 - Паттерн \"Наблюдатель\" \
+    \nq  - Выход \
+    \n1  - Паттерн \"Фабричный метод\" \
+    \n2  - Паттерн \"Абстрактнрая фабрика\" \
+    \n3  - Паттерн \"Singleton\" \
+    \n4  - Паттерн \"Прототип\" \
+    \n5  - Паттерн \"Строитель\" \
+    \n6  - Паттерн \"Стратегия\" \
+    \n7  - Паттерн \"Наблюдатель\" \
+    \n8  - Паттерн \"Команда\" \
+    \n9  - Паттерн \"Наблюдатель\" \
     \n10 - Паттерн \"Итератор\" \
     \n11 - Паттерн \"Состояние\" \
     \n12 - Паттерн \"Цепочка обязанностей\" \
+    \n13 - Паттерн \"Интерпретатор\" \
     \n";
 
     while (True):
@@ -46,6 +48,7 @@ def run():
             case '10': test_iterator();         continue;
             case '11': test_state();            continue;
             case '12': test_chain();            continue;
+            case '13': test_interpreter();      continue;
             case _:
                 print("Не тыкай чё-попало")
                 
