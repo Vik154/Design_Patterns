@@ -151,6 +151,7 @@
     <ClInclude Include="Creational_patterns\FactoryMethod.h" />
     <ClInclude Include="Creational_patterns\Prototype.hpp" />
     <ClInclude Include="Creational_patterns\Singleton.hpp" />
+    <ClInclude Include="Structural_patterns\Adapter.hpp" />
     <ClInclude Include="Structural_patterns\Decorator.hpp" />
   </ItemGroup>
   <ItemGroup>

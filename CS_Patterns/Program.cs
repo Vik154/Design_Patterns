@@ -36,6 +36,7 @@ namespace Patterns {
                 "\n15 - Паттерн \"Хранитель\"" +
                 "\n16 - Паттерн \"Посетитель\"" +
                 "\n17 - Паттерн \"Декоратор\"" +
+                "\n18 - Паттерн \"Адаптер\"" +
                 "\n";
 
             while (true) {
@@ -61,6 +62,7 @@ namespace Patterns {
                     case "15": TestMemento.ShowResult();        break;
                     case "16": TestVisitor.ShowResult();        break;
                     case "17": TestDecorator.ShowResult();      break;
+                    case "18": TestAdapter.ShowResult();        break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
