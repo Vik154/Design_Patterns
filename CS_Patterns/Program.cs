@@ -55,8 +55,8 @@ namespace Patterns {
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
-                }
-            }
-        }
-    }
+                } // switch
+            } // while
+        } // Run()
+    } // class ShowResult
 }
