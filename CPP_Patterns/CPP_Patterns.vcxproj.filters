@@ -66,6 +66,9 @@
     <ClInclude Include="Structural_patterns\Decorator.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Structural_patterns\Adapter.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Creational_patterns\FactoryMethod.cpp">
