@@ -60,7 +60,7 @@ namespace Patterns {
                     case "14": TestMediator.ShowResult();       break;
                     case "15": TestMemento.ShowResult();        break;
                     case "16": TestVisitor.ShowResult();        break;
-                    case "17": TestDecorator.ShowResult();        break;
+                    case "17": TestDecorator.ShowResult();      break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
