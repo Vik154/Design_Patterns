@@ -14,6 +14,7 @@
 #include "Behavioral_patterns/Mediator.hpp"
 #include "Behavioral_patterns/Memento.hpp"
 #include "Behavioral_patterns/Visitor.hpp"
+#include "Structural_patterns/Decorator.hpp"
 
 
 namespace Pattern {
@@ -44,6 +45,7 @@ namespace Pattern {
 			"\n14 - Паттерн \"Посредник\""
 			"\n15 - Паттерн \"Хранитель\""
 			"\n16 - Паттерн \"Посетитель\""
+			"\n17 - Паттерн \"Декоратор\""
 			"\n";
 
 		while (true) {
@@ -77,6 +79,7 @@ namespace Pattern {
 			case 14: Behavioral::test_mediator();         break;
 			case 15: Behavioral::test_memento();          break;
 			case 16: Behavioral::test_visitor();          break;
+			case 17: Structural::test_decorator();        break;
 			default: cin.clear();                         break;
 			}
 		}
