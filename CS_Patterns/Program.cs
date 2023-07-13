@@ -38,13 +38,13 @@ namespace Patterns {
                 result = Console.ReadLine();
                 Console.Write('\r');
                 switch (result) {
-                    case "й": case "q": case "Q": case "Й": return;
+                    case "й": case "q": case "Q": case "Й":     return;
                     case "1": TestFactoryMethod.ShowResult();   break;
                     case "2": TestAbstractFactory.ShowResult(); break;
                     case "3": TestSingleton.ShowResult();       break;
                     case "4": TestPrototype.ShowResult();       break;
                     case "5": TestBuilder.ShowResult();         break;
-                    case "6": TestStrategy.Test_Strategy();     break;
+                    case "6": TestStrategy.ShowResult();        break;
                     case "7": TestObserver.ShowResult();        break;
                     case "8": TestCommand.ShowResult();         break;
                     case "9": TestTemplate.ShowResult();        break;
