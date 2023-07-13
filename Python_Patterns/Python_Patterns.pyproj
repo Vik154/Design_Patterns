@@ -26,6 +26,7 @@
     <Compile Include="Behavioral_patterns\Interpreter.py" />
     <Compile Include="Behavioral_patterns\Iterator.py" />
     <Compile Include="Behavioral_patterns\Mediator.py" />
+    <Compile Include="Behavioral_patterns\Memento.py" />
     <Compile Include="Behavioral_patterns\Observer.py" />
     <Compile Include="Behavioral_patterns\State.py" />
     <Compile Include="Behavioral_patterns\Strategy.py" />

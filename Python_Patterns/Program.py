@@ -12,6 +12,7 @@ from Behavioral_patterns.Chain_of_responsibility import test_chain
 from Behavioral_patterns.Command                 import test_command
 from Behavioral_patterns.Interpreter             import test_interpreter
 from Behavioral_patterns.Mediator                import test_mediator
+from Behavioral_patterns.Memento                 import test_memento
 
 
 def run():
@@ -31,6 +32,7 @@ def run():
     \n12 - Паттерн \"Цепочка обязанностей\" \
     \n13 - Паттерн \"Интерпретатор\" \
     \n14 - Паттерн \"Посредник\" \
+    \n15 - Паттерн \"Хранитель\" \
     \n";
 
     while (True):
@@ -52,6 +54,7 @@ def run():
             case '12': test_chain();            continue;
             case '13': test_interpreter();      continue;
             case '14': test_mediator();         continue;
+            case '15': test_memento();          continue;
             case _:
                 print("Не тыкай чё-попало")
                 
