@@ -18,6 +18,7 @@ from Structural_patterns.Decorator               import test_decorator
 from Structural_patterns.Adapter                 import test_adapter
 from Structural_patterns.Facade                  import test_facade
 from Structural_patterns.Composite               import test_composite
+from Structural_patterns.Proxy                   import test_proxy
 
 
 def run():
@@ -43,6 +44,7 @@ def run():
     \n18 - Паттерн \"Адаптер\" \
     \n19 - Паттерн \"Фасад\" \
     \n20 - Паттерн \"Компоновщик\" \
+    \n21 - Паттерн \"Заместитель\" \
     \n";
 
     while (True):
@@ -70,6 +72,7 @@ def run():
             case '18': test_adapter();          continue;
             case '19': test_facade();           continue;
             case '20': test_composite();        continue;
+            case '21': test_proxy();            continue;
             case _:
                 print("Не тыкай чё-попало")
                 
