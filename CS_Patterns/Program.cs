@@ -39,6 +39,7 @@ namespace Patterns {
                 "\n18 - Паттерн \"Адаптер\"" +
                 "\n19 - Паттерн \"Фасад\"" +
                 "\n20 - Паттерн \"Компоновщик\"" +
+                "\n21 - Паттерн \"Заместитель\"" +
                 "\n";
 
             while (true) {
@@ -67,6 +68,7 @@ namespace Patterns {
                     case "18": TestAdapter.ShowResult();        break;
                     case "19": TestFacade.ShowResult();         break;
                     case "20": TestComposite.ShowResult();      break;
+                    case "21": TestProxy.ShowResult();      break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
