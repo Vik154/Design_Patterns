@@ -156,6 +156,7 @@
     <ClInclude Include="Structural_patterns\Composite.hpp" />
     <ClInclude Include="Structural_patterns\Decorator.hpp" />
     <ClInclude Include="Structural_patterns\Facade.hpp" />
+    <ClInclude Include="Structural_patterns\Flyweight.hpp" />
     <ClInclude Include="Structural_patterns\Proxy.hpp" />
   </ItemGroup>
   <ItemGroup>

@@ -20,6 +20,7 @@
 #include "Structural_patterns/Composite.hpp"
 #include "Structural_patterns/Proxy.hpp"
 #include "Structural_patterns/Bridge.hpp"
+#include "Structural_patterns/Flyweight.hpp"
 
 
 namespace Pattern {
@@ -29,20 +30,20 @@ namespace Pattern {
 	using std::cout;
 	using std::cin;
 
-
 	void run() {
 		string result;
-		string info = "\nВыберите команду:"
-			"\nq - Выход"
-			"\n1 - Паттерн \"Фабричный метод\""
-			"\n2 - Паттерн \"Абстракная фабрика\""
-			"\n3 - Паттерн \"Одиночка\""
-			"\n4 - Паттерн \"Прототип\""
-			"\n5 - Паттерн \"Строитель\""
-			"\n6 - Паттерн \"Стратегия\""
-			"\n7 - Паттерн \"Наблюдатель\""
-			"\n8 - Паттерн \"Команда\""
-			"\n9 - Паттерн \"Шаблонный метод\""
+		string info = "\n--------------------------------"
+			"\nВыберите команду:"
+			"\nq  - Выход"
+			"\n1  - Паттерн \"Фабричный метод\""
+			"\n2  - Паттерн \"Абстракная фабрика\""
+			"\n3  - Паттерн \"Одиночка\""
+			"\n4  - Паттерн \"Прототип\""
+			"\n5  - Паттерн \"Строитель\""
+			"\n6  - Паттерн \"Стратегия\""
+			"\n7  - Паттерн \"Наблюдатель\""
+			"\n8  - Паттерн \"Команда\""
+			"\n9  - Паттерн \"Шаблонный метод\""
 			"\n10 - Паттерн \"Итератор\""
 			"\n11 - Паттерн \"Состояние\""
 			"\n12 - Паттерн \"Цепочка обязанностей\""
@@ -56,7 +57,8 @@ namespace Pattern {
 			"\n20 - Паттерн \"Компоновщик\""
 			"\n21 - Паттерн \"Заместитель\""
 			"\n22 - Паттерн \"Мост\""
-			"\n";
+			"\n23 - Паттерн \"Приспособленец\""
+			"\n--------------------------------\n";
 
 		while (true) {
 			cout << info;
@@ -68,7 +70,6 @@ namespace Pattern {
 			}
 			catch (...) {
 				cout << "Чё ты тыкаешь чё-попало. Такой команды нет, не тыкай!";
-				cin.clear();
 				continue;
 			}
 
@@ -95,6 +96,8 @@ namespace Pattern {
 			case 20: Structural::test_composite();        break;
 			case 21: Structural::test_proxy();            break;
 			case 22: Structural::test_bridge();           break;
+			case 23: Structural::test_flyweight();
+				     Сonception::run_flyweight();         break;
 			default: cin.clear();                         break;
 			}
 		}
