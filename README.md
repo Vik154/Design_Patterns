@@ -1,4 +1,4 @@
-# Design_Patterns
+# Примеры паттернов проектирования (Design Patterns Tutorials) 
 Порождающие паттерны:
 - Фабричный метод (Factory Method)
 - Абстрактная фабрика (Abstract Factory)
