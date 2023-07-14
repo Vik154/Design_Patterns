@@ -18,6 +18,7 @@
 #include "Structural_patterns/Adapter.hpp"
 #include "Structural_patterns/Facade.hpp"
 #include "Structural_patterns/Composite.hpp"
+#include "Structural_patterns/Proxy.hpp"
 
 
 namespace Pattern {
@@ -52,6 +53,7 @@ namespace Pattern {
 			"\n18 - Паттерн \"Адаптер\""
 			"\n19 - Паттерн \"Фасад\""
 			"\n20 - Паттерн \"Компоновщик\""
+			"\n21 - Паттерн \"Заместитель\""
 			"\n";
 
 		while (true) {
@@ -89,6 +91,7 @@ namespace Pattern {
 			case 18: Structural::test_adapter();          break;
 			case 19: Structural::test_facade();           break;
 			case 20: Structural::test_composite();        break;
+			case 21: Structural::test_proxy();            break;
 			default: cin.clear();                         break;
 			}
 		}
