@@ -75,6 +75,9 @@
     <ClInclude Include="Structural_patterns\Composite.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Structural_patterns\Proxy.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Creational_patterns\FactoryMethod.cpp">
