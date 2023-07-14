@@ -43,6 +43,7 @@
     <Compile Include="Structural_patterns\Composite.py" />
     <Compile Include="Structural_patterns\Decorator.py" />
     <Compile Include="Structural_patterns\Facade.py" />
+    <Compile Include="Structural_patterns\Flyweight.py" />
     <Compile Include="Structural_patterns\Proxy.py" />
   </ItemGroup>
   <ItemGroup>

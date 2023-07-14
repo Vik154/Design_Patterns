@@ -20,10 +20,12 @@ from Structural_patterns.Facade                  import test_facade
 from Structural_patterns.Composite               import test_composite
 from Structural_patterns.Proxy                   import test_proxy
 from Structural_patterns.Bridge                  import test_bridge
+from Structural_patterns.Flyweight               import test_flyweight
 
 
 def run():
-    info = "\nВыберите команду: \
+    info = "--------------------------\
+    \nВыберите команду: \
     \nq  - Выход \
     \n1  - Паттерн \"Фабричный метод\" \
     \n2  - Паттерн \"Абстрактнрая фабрика\" \
@@ -47,7 +49,8 @@ def run():
     \n20 - Паттерн \"Компоновщик\" \
     \n21 - Паттерн \"Заместитель\" \
     \n22 - Паттерн \"Мост\" \
-    \n";
+    \n23 - Паттерн \"Приспособленец\" \
+    \n--------------------------------\n";
 
     while (True):
         key = input(info)
@@ -76,6 +79,7 @@ def run():
             case '20': test_composite();        continue;
             case '21': test_proxy();            continue;
             case '22': test_bridge();           continue;
+            case '23': test_flyweight();        continue;
             case _:
                 print("Не тыкай чё-попало")
                 
