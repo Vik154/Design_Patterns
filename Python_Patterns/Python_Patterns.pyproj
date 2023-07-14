@@ -39,9 +39,11 @@
     <Compile Include="Creational_patterns\Singleton.py" />
     <Compile Include="Program.py" />
     <Compile Include="Structural_patterns\Adapter.py" />
+    <Compile Include="Structural_patterns\Bridge.py" />
     <Compile Include="Structural_patterns\Composite.py" />
     <Compile Include="Structural_patterns\Decorator.py" />
     <Compile Include="Structural_patterns\Facade.py" />
+    <Compile Include="Structural_patterns\Flyweight.py" />
     <Compile Include="Structural_patterns\Proxy.py" />
   </ItemGroup>
   <ItemGroup>
