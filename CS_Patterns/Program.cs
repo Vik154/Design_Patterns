@@ -41,6 +41,7 @@ namespace Patterns {
                 "\n20 - Паттерн \"Компоновщик\"" +
                 "\n21 - Паттерн \"Заместитель\"" +
                 "\n22 - Паттерн \"Мост\"" +
+                "\n23 - Паттерн \"Приспособленец\"" +
                 "\n";
 
             while (true) {
@@ -71,6 +72,7 @@ namespace Patterns {
                     case "20": TestComposite.ShowResult();      break;
                     case "21": TestProxy.ShowResult();          break;
                     case "22": TestBridge.ShowResult();         break;
+                    case "23": TestFlyweight.ShowResult();      break;
                     default:
                         Console.WriteLine("Такой команды нет, не тыкай чё-попало!");
                         break;
