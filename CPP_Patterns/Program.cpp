@@ -19,6 +19,7 @@
 #include "Structural_patterns/Facade.hpp"
 #include "Structural_patterns/Composite.hpp"
 #include "Structural_patterns/Proxy.hpp"
+#include "Structural_patterns/Bridge.hpp"
 
 
 namespace Pattern {
@@ -54,6 +55,7 @@ namespace Pattern {
 			"\n19 - Паттерн \"Фасад\""
 			"\n20 - Паттерн \"Компоновщик\""
 			"\n21 - Паттерн \"Заместитель\""
+			"\n22 - Паттерн \"Мост\""
 			"\n";
 
 		while (true) {
@@ -92,6 +94,7 @@ namespace Pattern {
 			case 19: Structural::test_facade();           break;
 			case 20: Structural::test_composite();        break;
 			case 21: Structural::test_proxy();            break;
+			case 22: Structural::test_bridge();           break;
 			default: cin.clear();                         break;
 			}
 		}
